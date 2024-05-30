@@ -1,13 +1,16 @@
 <template>
   <div class="wrapper-main">
-    <Header />
-    <WelcomeModule />
-    <Services />
-    <div class="alert-wrapper-phone card-c">
-        <p class="color-pink">Примечание: </p>
-        <p >
-            За более подробной информации можете обратиться по номеру телефона или в нашей группе в “ВК”
-        </p>
+    <Loader :loading="loading" />
+    <div>
+      <Header />
+      <WelcomeModule />
+      <Services />
+      <div class="alert-wrapper-phone card-c">
+          <p class="color-pink">Примечание: </p>
+          <p >
+              За более подробной информации можете обратиться по номеру телефона или в нашей группе в “ВК”
+          </p>
+      </div>
     </div>
   </div>
 </template>
@@ -16,6 +19,7 @@
 import Header from "@/components/Header.vue";
 import WelcomeModule from '@/components/WelcomeModule.vue';
 import Services from '@/components/Services.vue';
+import Loader from '@/components/Loader.vue';
 import './assets/scss/bootstrap.scss'
 
 export default {
@@ -26,13 +30,15 @@ export default {
       rank: '',
       telegram: '',
       email: '',
-      dateRegister: ''
+      dateRegister: '',
+      loading: true
     };
   },
   components: {
     Services,
     Header,
     WelcomeModule,
+    Loader,
   },
 }
 </script>
