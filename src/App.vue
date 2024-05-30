@@ -11,6 +11,9 @@
               За более подробной информации можете обратиться по номеру телефона или в нашей группе в “ВК”
           </p>
       </div>
+      <AboutUs/>
+      <Map/>
+      <Footer/>
     </div>
   </div>
 </template>
@@ -20,7 +23,12 @@ import Header from "@/components/Header.vue";
 import WelcomeModule from '@/components/WelcomeModule.vue';
 import Services from '@/components/Services.vue';
 import Loader from '@/components/Loader.vue';
+import AboutUs from './components/AboutUs.vue';
+import Footer from '@/components/Footer.vue'
+import Map from '@/components/Map.vue'
+
 import './assets/scss/bootstrap.scss'
+
 
 export default {
   name: 'AreaWD-project',
@@ -39,6 +47,9 @@ export default {
     Header,
     WelcomeModule,
     Loader,
+    AboutUs,
+    Map,
+    Footer
   },
 }
 </script>

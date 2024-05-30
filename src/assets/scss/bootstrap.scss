@@ -1,6 +1,7 @@
 .wrapper-main{
     .wrapper-header{
         .left-content{
+            animation: loadingrev 3s ease 0s 1 normal forwards;
             .logo-item{
                 .logo-title{
                     .logo-title-left{
@@ -10,16 +11,18 @@
             }
         }
         .right-content{
-    
+            animation: loadingright 3s ease 0s 1 normal forwards;
         }
     }
     .wrapper-welcome{
+        animation: loading 3s ease 0s 1 normal forwards;
         background-image: url('../images/back-space.png');
         background-size: cover;
         background-position: left center;
         background-repeat: no-repeat;
     }
     .wrapper-services{
+        animation: loading 3s ease 0s 1 normal forwards;
         position: relative;
         padding: 40px;
         .services-title{
@@ -76,6 +79,67 @@
                     background-color: var(--color-white);
                 }
             }
+        }
+    }
+    .wrapper-about{
+        animation: loadingrev 3s ease 0s 1 normal forwards;
+        margin-top: 150px;
+        .swiper-item{
+            width: 250px;
+            height: 360px;
+            border-radius: 30px;
+        }
+        .slider-title{
+            .underline{
+                text-decoration: underline;
+            }
+        }
+        .card-b{
+            p{
+                font-size: 20px;
+            }
+            .operting-mode{
+                font-size: 20px;
+            }
+        }
+        .about-item{
+            height: 100%;
+            .title-about,.subtitle-about,.icon-about{
+                margin: 20px;
+            }
+            .subtitle-about{
+                color: #666666;
+            }
+        }
+        
+    }
+    .wrapper-map{
+        animation: loadingright 3s ease 0s 1 normal forwards;
+        .title-map{
+            margin: 20px;
+            border-bottom: #666666 solid 1px;
+            p{
+                margin: 10px auto;
+                color: #666666;
+            }
+        }
+        p{
+            margin: 20px;
+            color: #666666;
+        }
+        .wrapper-yandex-map{
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            .map{
+                width: 100%;
+            }
+        }
+    }
+    .footer-wrapper{
+        .footer-text{
+            font-size: 20px;
+            color: #666666;
         }
     }
 }
