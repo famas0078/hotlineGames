@@ -1,15 +1,41 @@
-<script setup>
-
-import Header from "@/components/Header.vue";
-import './assets/scss/bootstrap.scss'
-</script>
-
 <template>
   <div class="wrapper-main">
-    <Header/>
-    hgdsh
+    <Header />
+    <WelcomeModule />
+    <Services />
+    <div class="alert-wrapper-phone card-c">
+        <p class="color-pink">Примечание: </p>
+        <p >
+            За более подробной информации можете обратиться по номеру телефона или в нашей группе в “ВК”
+        </p>
+    </div>
   </div>
 </template>
+
+<script>
+import Header from "@/components/Header.vue";
+import WelcomeModule from '@/components/WelcomeModule.vue';
+import Services from '@/components/Services.vue';
+import './assets/scss/bootstrap.scss'
+
+export default {
+  name: 'AreaWD-project',
+  data() {
+    return {
+      fio: '',
+      rank: '',
+      telegram: '',
+      email: '',
+      dateRegister: ''
+    };
+  },
+  components: {
+    Services,
+    Header,
+    WelcomeModule,
+  },
+}
+</script>
 
 <style scoped>
 header {

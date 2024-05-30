@@ -19,6 +19,12 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --color-white: #F1F1F1;
+  --color-pink: #E75E8D;
+  --color-card: #2C2E30;
+  --color-back: #292929;
+  --color-gray: #444444;
 }
 
 /* semantic color variables for this project */
